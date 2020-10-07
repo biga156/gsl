@@ -177,7 +177,6 @@ class FormEnregistrement extends FormBase {
 
     // Output all the values entered by user.
     drupal_set_message($this->t('Your datas are: "@firstname", "@lastname", @birth_date, "@adress", "@city", "@cp","@country", "@phone", "@email"', [
-      '@activity' => $form_state->getValue('activity'),
       '@firstname' => $form_state->getValue('firstname'),
       '@lastname' => $form_state->getValue('lastname'),
       '@birth_date' => $form_state->getValue('birth_date'),
