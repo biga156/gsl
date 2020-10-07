@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\form_s_abonner\Form;
+namespace Drupal\form_enregistrement\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,14 +8,14 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * {@inheritdoc}
  */
-class FormSAbonner extends FormBase {
+class FormEnregistrement extends FormBase {
 
   /**
    * @return string
    *   The unique ID of this form defined by this class
    */
   public function getFormId() {
-    return 'form_s_abonner';
+    return 'form_enregistrement';
   }
 
   /**
@@ -35,13 +35,6 @@ class FormSAbonner extends FormBase {
       '#required' => FALSE,
     ];
 
-    $form['activity'] = [
-      '#type' => 'textfield',
-      '#maxlength' => 30,
-      '#title' => $this->t('Activité'),
-      '#description' => $this->t('Activité choisit'),
-      '#required' => TRUE,
-    ];
 
     $form['firstname'] = [
       '#type' => 'textfield',
